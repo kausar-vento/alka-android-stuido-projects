@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BAB03-Pratikum1</string>
+    <string name="logo_text">logo_text</string>
+    <string name="sign_in_to_continue">sign_in_to_continue</string>
+    <string name="enter_your_password">enter_your_password</string>
+    <string name="forgot_password">forgot_password</string>
+    <string name="get_started">get_started</string>
+    <string name="log_in">log_in</string>
+    <string name="reset_code">reset_code</string>
+    <string name="enter_your_reset_code">enter_your_reset_code</string>
+    <string name="new_password">new_password</string>
+    <string name="confirm_password">confirm_password</string>
+    <string name="change_password">change_password</string>
+    <string name="username">username</string>
+    <string name="send_request">send_request</string>
+</resources>
