@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/iptUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:hint="Masukan Username Anda"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="28dp" />
+
+    <EditText
+        android:id="@+id/iptPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iptUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Masukan Password Anda"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="28dp" />
+    <Button
+        android:id="@+id/btnL"
+        android:onClick="btnL"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iptPassword"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnL"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Tidak Mempunyai Akun?"/>
+    <Button
+        android:onClick="btnR"
+        android:id="@+id/btnR"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textR"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Register"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

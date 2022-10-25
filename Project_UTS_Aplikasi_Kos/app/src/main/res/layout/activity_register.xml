@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Masukan Username Anda"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/namaAnda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Masukan Nama Lengkap Anda"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:hint="Masukan Password Anda"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Masukan Alamat Anda"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/jenisKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alamat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Pilih Jenis Kelamin Anda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rg"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/jenisKelamin">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki - Laki"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/g1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Perempuan"
+            android:id="@+id/g2"
+            android:layout_marginLeft="30dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/statusAnda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jenisKelamin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Status Anda"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/spStatusAnda"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusAnda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/statusSekarang"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tvw"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/spStatusAnda"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="prosesReg"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLog"
+        style="@style/ShapeAppearanceOverlay.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnReg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="kemLog"
+        android:text="Login"
+        android:textColor="@color/white" />
+</RelativeLayout>

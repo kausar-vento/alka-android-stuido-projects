@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bg"
+    tools:context=".LihatPesananActivity">
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/list"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@+id/gambar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="List Pesanan Anda" />
+
+    <TextView
+        android:id="@+id/idKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/namaLengkapKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/jklKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaLengkapKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/namaKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jklKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/jenisKamarKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/lamaSewaKost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenisKamarKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Text View"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lamaSewaKost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="kemListPesanan"
+        android:text="Back to Home"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

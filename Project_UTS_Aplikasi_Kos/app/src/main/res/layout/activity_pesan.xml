@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".PesanActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/ic_baseline_monetization_on_24" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="15"
+        android:hint="Masukan Nama Lengkap Anda"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kelamin"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rg"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/kelamin">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki - Laki"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/rb1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Perempuan"
+            android:id="@+id/rb2"
+            android:layout_marginLeft="30dp"/>
+    </RadioGroup>
+    <TextView
+        android:id="@+id/namaKos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Tempat Kos"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rg"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/spNamaKos"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namaKos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/namaTempatKos"
+        android:textAlignment="center" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/tvw"/>
+
+    <TextView
+        android:id="@+id/jenisKamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spNamaKos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Jenis Kamar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rk"
+        android:layout_below="@+id/jenisKamar">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mewah"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/jk1"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Sederhana"
+            android:id="@+id/jk2"
+            android:layout_marginLeft="30dp"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/lamaSewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="15"
+        android:hint="Masukan Lama Sewanya"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorPrimaryDark" />
+
+    <Button
+        android:id="@+id/btnKirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lamaSewa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Kirim Data"
+        android:textColor="@color/white"
+        android:onClick="kirimData"/>
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnKirim"
+        android:text="Kembali Ke Menu"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:onClick="backHome"/>
+</RelativeLayout>

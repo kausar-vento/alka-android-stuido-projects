@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Project_UTS_Aplikasi_Kos</string>
+    <string name="select">Select Item</string>
+    <string-array name="namaTempatKos">
+        <item>Kos Bude Berjana</item>
+        <item>Kos Mewah Hemat</item>
+        <item>Kos Anaknya Ipul</item>
+        <item>Kos Bapake Kumis</item>
+        <item>Kos Aman Menawan</item>
+        <item>Kos Blok B</item>
+    </string-array>
+
+    <string-array name="statusSekarang">
+        <item>Pilih</item>
+        <item>SMA</item>
+        <item>Kuliah</item>
+        <item>Kerja</item>
+    </string-array>
+</resources>
